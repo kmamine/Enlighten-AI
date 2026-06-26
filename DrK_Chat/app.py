@@ -8,6 +8,13 @@ from the vLLM Gemma endpoint, and shows clickable timestamped source citations.
 """
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+# `streamlit run DrK_Chat/app.py` puts DrK_Chat/ (not the repo root) on sys.path,
+# so make the repo root — which holds config.py and the DrK_Chat package — importable.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import streamlit as st
 
 import config
