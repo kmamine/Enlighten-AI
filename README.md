@@ -4,6 +4,15 @@ A retrieval-augmented (RAG) mental-health/self-help chatbot grounded in transcri
 Dr. K's (HealthyGamerGG) YouTube videos. It is a reflective companion — **not** a
 substitute for a licensed therapist or medical care.
 
+## Screenshots
+
+The Streamlit chat UI: a persistent safety disclaimer, answers grounded in Dr. K's
+videos, and expandable citations that deep-link to the exact moment in each source.
+
+| Reflective, grounded answer | Inline citations + safety reminder | Timestamped sources |
+|:---:|:---:|:---:|
+| ![Overview of the chat with disclaimer banner](docs/screenshots/01-overview.png) | ![Full grounded answer with inline numbered citations](docs/screenshots/02-grounded-answer.png) | ![Expanded source list with timestamped, playlist-tagged links](docs/screenshots/03-sources.png) |
+
 ## Pipeline at a glance
 
 ```
