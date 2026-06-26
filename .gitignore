@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+
+# Generated runtime data (Chroma index, segments, audio, canonical CSV, experiment caches)
+data/
+
+# Misc
+.DS_Store
+*.log

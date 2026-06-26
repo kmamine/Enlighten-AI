@@ -1,0 +1,37 @@
+[project]
+name = "enlighten-ai"
+version = "0.1.0"
+description = "DrK_Chat: a RAG mental-health/self-help chatbot grounded in Dr. K (HealthyGamerGG) video transcripts."
+requires-python = ">=3.12"
+dependencies = [
+    # Scraping + transcription
+    "yt-dlp",
+    "youtube-transcript-api",
+    "whisperx",
+    # RAG stack (minimal custom)
+    "openai",
+    "chromadb",
+    "sentence-transformers",
+    "rank-bm25",
+    # UI + utilities
+    "streamlit",
+    "pandas",
+    "numpy",
+    "tqdm",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+analysis = ["matplotlib", "seaborn", "scikit-learn", "wordcloud", "networkx", "vaderSentiment"]
+
+[project.scripts]
+drk-scrape = "Scrapper.build_dataset:main"
+drk-ingest = "DrK_Chat.ingest:main"
+
+# torch/torchaudio are installed separately from the CUDA index:
+#   uv pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu124
+# (kept out of [dependencies] so resolution doesn't pull a CPU build.)
+
+[tool.setuptools]
+py-modules = ["config"]
+packages = ["Scrapper", "DrK_Chat"]
