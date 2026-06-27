@@ -1,8 +1,14 @@
-# Enlighten AI · DrK_Chat
+<p align="center">
+  <img src="static/imgs/HG_logo.jpg" alt="HealthyGamerGG logo" width="110">
+</p>
 
-A retrieval-augmented (RAG) mental-health/self-help chatbot grounded in transcripts of
-Dr. K's (HealthyGamerGG) YouTube videos. It is a reflective companion — **not** a
-substitute for a licensed therapist or medical care.
+<h1 align="center">Enlighten AI · DrK_Chat</h1>
+
+<p align="center">
+  A retrieval-augmented (RAG) mental-health/self-help chatbot grounded in transcripts of
+  Dr. K's (HealthyGamerGG) YouTube videos — a reflective companion, <strong>not</strong> a
+  substitute for a licensed therapist or medical care.
+</p>
 
 ## Screenshots
 
